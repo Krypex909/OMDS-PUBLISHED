@@ -1,0 +1,145 @@
+/* FOOTER */
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #172554;
+  color: #172554;
+}
+
+.footer-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footer-modal.active {
+    display: flex;
+}
+
+.footer-modal-content {
+    width: min(90%, 500px);
+    padding: 24px;
+    background: white;
+    border-radius: 8px;
+}
+
+
+.page-footer {
+  width: 100%;
+  min-height: 192px;
+  padding: 20px;
+  background-color: #172554;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* FOOTER CONTENT */
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.3fr;
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-section h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.footer-section h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #cbd5e1;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #334155;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+  color: #cbd5e1;
+  font-size: 11px;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 600px) {
+  .page-footer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 12px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .footer-section h3 {
+    font-size: 19px;
+  }
+
+  .footer-section h4 {
+    font-size: 13px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 11px;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+}

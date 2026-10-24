@@ -1,0 +1,507 @@
+.parent-container {
+    display: flex;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.child-container1 {
+    display: flex;
+    background-color: #fff7f7;
+    flex-direction: column;
+    border: 3px solid #527deb;
+    padding: 10px;
+    gap: 8px;
+    min-height: 520px;
+    box-sizing: border-box;
+}
+
+.child-container3 {
+    width: 100%;
+    margin: 0;
+    min-height: auto;
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bigtext2 {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    margin-left: 5px;
+}
+
+
+/* COLUMN TITLE*/
+
+.column-title {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #071b49;
+    border-bottom: 2px solid #527deb;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/*SEARCHED USER PROFILE*/
+.searched-user-container {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.searched-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff7f7;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.searched-profile-picture-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    min-width: 120px;
+}
+
+.searched-profile-picture {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #527deb;
+}
+
+.searched-profile-information {
+    flex: 1;
+}
+
+.searched-profile-name {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #071b49;
+    margin-bottom: 12px;
+}
+
+.profile-information-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+
+.profile-information-item {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    min-width: 0;
+}
+
+.profile-label {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.profile-value {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    color: #222;
+    word-break: break-word;
+}
+
+.status-active {
+    color: #527deb;
+    font-weight: bold;
+}
+
+
+/* ACTIVE ACCESS + ACCESS REQUESTS*/
+
+.access-request-container {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.access-request-container .child-container3 {
+    flex: 1;
+    width: 50%;
+}
+
+/* ACTIVE ACCESS*/
+.access-box {
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.profile-area-small {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.access-profile-picture {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #527deb;
+}
+
+.access-user {
+    margin-bottom: 10px;
+}
+
+.access-user p {
+    margin-bottom: 5px;
+}
+
+.access-information p {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+
+/* ACCESS REQUESTS*/
+.request-box {
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.request-user p,
+.request-information p {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+
+/* IN PROGRESS*/
+.request-status {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 7px 14px;
+    background-color: #fff3cd;
+    border: 1px solid #ffe69c;
+    border-radius: 4px;
+    color: #856404;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* AUTHORIZED PERSONNEL CREDENTIALS*/
+.personnel-credentials-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 5px;
+}
+
+.personnel-active-status {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    color: #2e7d32;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* PROFILE PICTURE AREA */
+.personnel-profile-picture-box {
+    width: 180px;
+    min-width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* PERSONNEL PROFILE IMAGE */
+.personnel-dashboard-profile {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #527deb;
+    display: block;
+}
+
+/* CREDENTIAL INFORMATION */
+.personnel-credentials-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+/* EACH CREDENTIAL ROW */
+.personnel-credential-row {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 3px 0;
+}
+
+/* CREDENTIAL LABEL */
+.credential-label {
+    width: 220px;
+    min-width: 220px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #071b49;
+}
+
+/* CREDENTIAL VALUE */
+.credential-value {
+    flex: 1;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #444;
+}
+
+.credentials-container {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.credential-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    min-width: 0;
+}
+
+.credential-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.credential-value {
+    font-size: 14px;
+    color: #222;
+    word-break: break-word;
+}
+
+.credential-value.authorized {
+    font-weight: bold;
+    color: #527deb;
+}
+
+
+/* View TABLET - 900px AND BELOW*/
+
+@media screen and (max-width: 900px) {
+
+    .parent-container {
+        padding: 8px;
+    }
+    .child-container1 {
+        padding: 8px;
+    }
+    .searched-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .searched-profile-information {
+        width: 100%;
+    }
+    .profile-information-grid {
+        grid-template-columns: 1fr;
+    }
+    .access-request-container {
+        flex-direction: column;
+    }
+    .access-request-container .child-container3 {
+        width: 100%;
+    }
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* View in MOBILE - 600px AND BELOW*/
+
+@media screen and (max-width: 600px) {
+
+    .parent-container {
+        padding: 5px;
+    }
+    .child-container1 {
+        padding: 8px;
+        border-width: 2px;
+    }
+    .column-title {
+        font-size: 18px;
+    }
+    .searched-user-container,
+    .credentials-container,
+    .child-container3 {
+        padding: 12px;
+    }
+    .searched-profile-picture {
+        width: 95px;
+        height: 95px;
+    }
+    .searched-profile-picture-area {
+        width: 100%;
+        min-width: 0;
+    }
+    .searched-profile {
+        padding: 12px;
+    }
+    .profile-information-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .profile-information-item {
+        padding: 10px;
+    }
+    .profile-value {
+        font-size: 14px;
+    }
+    .access-box {
+        padding: 10px;
+    }
+    .request-box {
+        padding: 10px;
+    }
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+    .credential-item {
+        padding: 10px;
+    }
+}
+
+
+/* For SMALL PHONE - 400px AND BELOW*/
+
+@media screen and (max-width: 400px) {
+
+    .parent-container {
+        padding: 5px;
+    }
+    .child-container1 {
+        padding: 6px;
+    }
+    .column-title {
+        font-size: 17px;
+    }
+    .searched-profile-picture {
+        width: 85px;
+        height: 85px;
+    }
+    .profile-label {
+        font-size: 11px;
+    }
+    .profile-value {
+        font-size: 13px;
+    }
+    .request-user p,
+    .request-information p {
+        font-size: 12px;
+    }
+    .credential-label {
+        font-size: 12px;
+    }
+    .credential-value {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .personnel-credentials-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .personnel-profile-picture-box {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+    }
+    .personnel-credentials-details {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .personnel-credential-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .credential-label {
+        width: 100%;
+        min-width: 0;
+    }
+    .credential-value {
+        width: 100%;
+    }
+}

@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[hidden]{
+    display: none !important;
+}
+
+/*@font-face {
+    font-family: 'Special Gothic Expanded One';
+    src: url('../fonts/SpecialGothicExpandedOne-Regular.ttf');
+}*/
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+display: grid;
+grid-template-columns: minmax(320px, 1fr) 2fr;
+gap: 20px 40px;
+align-content: center;
+max-width: 1300px;
+min-height: 100vh;
+margin: 0 auto;
+padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: auto;
+    padding: 16px;
+    }
+    .big-container{
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+    .info-box{
+        margin-left: 0px;
+        max-width: 480px;
+        order: 1;
+    }
+}
+@media (min-width: 601px) {
+    .big-container{
+        width: 100%;
+    }
+}
+.info-box{
+    color: white;
+    align-self: start;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 10px;
+    padding: 10px 3px;
+    width: 100%;
+    background: linear-gradient(240deg, #0f172a, #1d4ed8);
+}
+
+.form-banner {
+    margin: 10px 20px 0;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.form-banner.error {
+    color: #7f1d1d;
+    background: #fee2e2;
+}
+.form-banner.success {
+    color: #14532d;
+    background: #dcfce7;
+}
+.input-box{
+    width: 100%;
+    padding: 10px 12px;
+    border: solid 1px white;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.input-box:focus{
+    outline: 3px solid #8ec5ff;
+    outline-offset: 1px;
+}
+.input-grid{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 10px 20px;
+}
+.input-grid p{
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* OMDS ACCOUNT ID + QR BUTTON */
+.id-row{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.id-row .input-box{
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    letter-spacing: 2px;
+}
+.qr-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    padding: 6px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
+}
+.qr-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.qr-btn:active{
+    opacity: 0.6;
+}
+.input-grid .id-hint{
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 15px;
+    
+}
+p{
+    font-family: arial, sans-serif;
+}
+
+.button-grid {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 20px 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.button-grid a{
+    display: block;
+    text-decoration: none;
+}
+
+.button{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: filter 0.3s, opacity 0.3s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.button:hover{
+    filter: brightness(0.92);
+}
+.button:active{
+    opacity: 0.4;
+}
+.big-container{
+    grid-row: span 2;
+    min-width: 0;
+    text-align: center;
+}
+.txt {
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(20px, 3.2vw, 38px);
+    line-height: 1.3;
+    color: rgb(4, 4, 65);
+    padding: 0 10px 24px;
+}
+
+.bluetxt {
+    font-size: 1em;
+    
+    color: #2196F3;
+    white-space: wrap;
+}
+.logo{
+    width: clamp(140px, 18vw, 200px);
+    margin-top: 15px;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-self: end;
+}
+.graphic-design{
+    display: block;
+    width: 100%;
+    max-height: 60vh;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* QR SCANNER POP-UP */
+.scanner-modal{
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.scanner-box{
+    width: min(92vw, 420px);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    background: linear-gradient(240deg, #0f172a, #1d4ed8);
+}
+.scanner-box h3{
+    margin-bottom: 12px;
+}
+.scanner-box video{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: black;
+}
+.scanner-status{
+    margin: 12px 0;
+    font-size: 13px;
+}

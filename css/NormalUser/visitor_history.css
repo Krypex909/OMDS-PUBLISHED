@@ -1,0 +1,147 @@
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-input {
+  height: 36px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+.filter-input::-webkit-outer-spin-button,
+.filter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.filter-input:focus {
+  border-color: #2196f3;
+}
+
+.search-button {
+  height: 36px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 4px;
+  background: #2196f3;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.search-button:hover {
+  background: #1976d2;
+}
+
+.search-button:active {
+  opacity: 0.7;
+}
+
+/* VISITOR RECORDS TABLE */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+thead {
+  background: #eef7ff;
+}
+
+th {
+  height: 40px;
+  text-align: left;
+  padding: 8px 10px;
+  color: #071b49;
+  border-bottom: 2px solid #2196f3;
+}
+
+th:first-child,
+td:first-child {
+  width: 5ch;
+  min-width: 5ch;
+  max-width: 5ch;
+}
+
+td {
+  height: 38px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+tbody tr:hover {
+  background: #f5faff;
+}
+
+.lowerVis{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pageButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 35px;
+  height: 35px;
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #2b87e9, #83c5ff);
+
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  text-align: left;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+#paginationContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.pageButton:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 5px #071b49 ;
+  animation: move 0.5s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  } 
+  to {
+
+  }
+}

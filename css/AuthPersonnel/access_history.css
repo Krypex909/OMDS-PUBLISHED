@@ -1,0 +1,240 @@
+.access-history-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* PAGE TITLE */
+.access-history-header {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.access-history-header h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #071b49;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #527deb;
+}
+
+.access-history-header p {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin: 8px 0 0 0;
+}
+
+
+/* TABLE CONTAINER*/
+
+.access-history-table-container {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+
+.access-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Roboto, sans-serif;
+}
+
+
+/* TABLE HEADER */
+
+.access-history-table th {
+    background-color: #f1f4fb;
+    color: #071b49;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #527deb;
+    white-space: nowrap;
+}
+
+
+/* TABLE DATA */
+.access-history-table td {
+    padding: 12px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: middle;
+}
+
+
+/* ALTERNATING ROWS */
+.access-history-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* HOVER */
+.access-history-table tbody tr:hover {
+    background-color: #f4f7ff;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.filter-input {
+  height: 36px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+.filter-input::-webkit-outer-spin-button,
+.filter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.filter-input:focus {
+  border-color: #2196f3;
+}
+
+.search-button {
+  height: 36px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 4px;
+  background: #2196f3;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.search-button:hover {
+  background: #1976d2;
+}
+
+.search-button:active {
+  opacity: 0.7;
+}
+
+/* REQUEST STATUS*/
+.request-status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* GRANTED */
+.request-status.granted {
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    color: #2e7d32;
+}
+
+/* DECLINED */
+.request-status.declined {
+    background-color: #ffebee;
+    border: 1px solid #ef9a9a;
+    color: #c62828;
+}
+
+/* PENDING */
+.request-status.pending {
+    background-color: #fff8e1;
+    border: 1px solid #ffe082;
+    color: #f57f17;
+}
+
+
+/* EMPTY DOWNLOAD CELL */
+.access-history-table td:last-child {
+    color: #555;
+}
+
+/* TABLE SUBTITLES */
+
+.access-history-subtitle {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #071b49;
+    margin: 25px 0 10px 0;
+}
+
+/* PAGINATION TABS */
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.page-button {
+    height: 32px;
+    min-width: 32px;
+    padding: 0 12px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: white;
+    color: #071b49;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.page-button:hover:not(:disabled) {
+    border-color: #527deb;
+    color: #527deb;
+}
+
+.page-button.active {
+    background-color: #527deb;
+    border-color: #527deb;
+    color: white;
+    font-weight: bold;
+}
+
+.page-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .access-history-table {
+        min-width: 850px;
+    }
+    .access-history-table-container {
+        overflow-x: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .access-history-header h2 {
+        font-size: 20px;
+    }
+    .access-history-header p {
+        font-size: 13px;
+    }
+}

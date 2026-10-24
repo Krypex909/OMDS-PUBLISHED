@@ -1,0 +1,286 @@
+<head>
+  <link rel="stylesheet" href="../css/NormalUser/dashCSS2.css" />
+  <link rel="stylesheet" href="../css/NormalUser/edit_profile.css" />
+</head>
+
+<!--USER INFORMATION / EDIT PROFILE-->
+
+<div class="parent-container">
+  <div class="child-container1">
+   
+
+    <div class="child-container3">
+      <div class="column-title">Edit User Profile</div>
+
+      <!-- PROFILE PICTURE -->
+      <div class="edit-profile-area">
+        <img
+          class="edit-profile-picture"
+          src="../images/User-Profile.jpg"
+          alt="Profile Picture"
+        />
+
+        <div class="profile-picture-controls">
+          <label for="profile-picture-upload" class="upload-picture-button">
+            Change Profile Picture
+          </label>
+
+          <input
+            type="file"
+            id="profile-picture-upload"
+            name="profile_picture"
+            accept="image/*"
+          />
+          <span class="picture-note">JPG, PNG or JPEG</span>
+        </div>
+      </div>
+
+      <!-- PROFILE INFORMATION -->
+      <div class="edit-information-grid">
+        <!-- FIRST NAME -->
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" placeholder="Enter first name" />
+        </div>
+
+        <!-- LAST NAME -->
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name" placeholder="Enter last name" />
+        </div>
+
+        <!-- MIDDLE NAME -->
+        <div class="form-group">
+          <label for="middle-name">Middle Name</label>
+          <input type="text" id="middle-name" name="middle_name" placeholder="Enter middle name" />
+        </div>
+
+        <!-- BLOOD TYPE -->
+        <div class="form-group">
+          <label for="blood-type">Blood Type</label>
+          <select id="blood-type" name="blood_type">
+            <option value="">Select Blood Type</option>
+
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
+
+        <!-- ACCOUNT NUMBER -->
+        <div class="form-group">
+          <label for="account-number">Account Number</label>
+          <input type="text" id="account-number" name="account_number" value="1234567890" readonly />
+        </div>
+
+        <!-- DATE OF BIRTH -->
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth</label>
+          <input type="date" id="date-of-birth" name="date_of_birth" />
+        </div>
+
+        <!-- SEX -->
+        <div class="form-group">
+          <label for="sex">Sex</label>
+          <select id="sex" name="sex">
+            <option value="">Select Sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- RELIGION -->
+        <div class="form-group">
+          <label for="religion">Religion</label>
+          <select id="religion" name="religion">
+            <option value="">Select Religion</option>
+            <option value="roman-catholic">Roman Catholic</option>
+            <option value="islam">Islam</option>
+            <option value="iglesia-ni-cristo">Iglesia ni Cristo</option>
+            <option value="born-again">Born Again Christian</option>
+            <option value="protestant">Protestant</option>
+            <option value="other">Other</option>
+            <option value="prefer-not">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="form-group full-width">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" placeholder="Enter complete address"></textarea>
+        </div>
+
+        <!-- CONTACT NUMBER -->
+        <div class="form-group">
+          <label for="contact-number">Contact Number</label>
+          <input type="tel" id="contact-number" name="contact_number" placeholder="09XXXXXXXXX" />
+        </div>
+
+        <!-- EMERGENCY CONTACT -->
+        <div class="form-group">
+          <label for="emergency-contact">Emergency Contact</label>
+          <input type="text" id="emergency-contact" name="emergency_contact" placeholder="Enter emergency contact" />
+        </div>
+
+        <!-- EMERGENCY CONTACT NUMBER -->
+
+        <div class="form-group">
+          <label for="emergency-contact-number">Emergency Contact Number</label>
+          <input type="tel" id="emergency-contact-number" name="emergency_contact_number" placeholder="09XXXXXXXXX" />
+        </div>
+      </div>
+    </div>
+
+    <!--EDIT MEDICAL INFORMATION-->
+    <div class="child-container3">
+      <div class="column-title">Edit Medical Information</div>
+
+      <div class="medical-grid">
+
+        <!--  LEFT COLUMN  -->
+        <div class="medical-column">
+
+          <!--MEDICAL CONDITIONS-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Medical Conditions</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="asthma" />Asthma</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="hypertension" />Hypertension</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="diabetes" />Diabetes</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="heart-disease" />Heart Disease</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="kidney-disease" />Kidney Disease</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medical_condition_other" placeholder="Specify other medical condition" />
+            </div>
+          </div>
+
+          <!--ALLERGIES-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Allergies</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="food" />Food Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="drug" />Drug / Medication Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="dust" />Dust Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="pollen" />Pollen Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="insect" />Insect Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="allergy_other" placeholder="Specify other allergy" />
+            </div>
+          </div>
+
+          <!--CURRENT MEDICATIONS-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Current Medications</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="blood-pressure" />Blood Pressure Medication</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="diabetes" />Diabetes Medication</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="pain-reliever" />Pain Reliever</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="antibiotic" />Antibiotic</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="vitamins" />Vitamins / Supplements</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medication_other" placeholder="Specify other medication" />
+            </div>
+          </div>
+
+        </div>
+        
+
+        <!--  RIGHT COLUMN  -->
+        <div class="medical-column">
+
+          <!--MEDICAL HISTORY-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Medical History</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="surgery" />Previous Surgery</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="hospitalization" />Previous Hospitalization</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="serious-illness" />Previous Serious Illness</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="injury" />Previous Injury</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="none" />No Significant Medical History</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medical_history_other" placeholder="Specify other medical history" />
+            </div>
+          </div>
+
+          <!--GENERAL MEDICAL STATUS-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">General Medical Status</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-radio"><input type="radio" name="medical_status" value="physically-fit" />Physically Fit</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="observation" />Under Medical Observation</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="medication" />Under Medication</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="existing-condition" />With Existing Condition</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="no-concern" />No Current Medical Concern</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medical_status_other" placeholder="Specify other medical status" />
+            </div>
+          </div>
+
+        <div class="other-specify">
+          <input
+            type="text"
+            name="medical_status_other"
+            placeholder="Specify other medical status"
+          />
+        </div>
+        <!-- /RIGHT COLUMN -->
+        <!--SAVE / CANCEL-->
+      <div class="edit-profile-actions">
+        <button type="button" class="cancel-button">Cancel</button>
+
+        <button type="submit" class="save-button">Save Changes</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>

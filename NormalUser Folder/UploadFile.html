@@ -1,0 +1,826 @@
+<head>
+  <link rel="stylesheet" href="../css/NormalUser/dashCSS2.css" />
+  <link rel="stylesheet" href="../css/NormalUser/upload.css" />
+</head>
+
+<div class="parent-container">
+  <div class="child-container1">
+    <div class="child-container3">
+      <div class="medical-upload-content">
+        <!-- PAGE HEADER -->
+        <div class="medical-upload-header">
+          <h2>Medical Documents</h2>
+          <p>Upload and manage your medical records and documents.</p>
+        </div>
+
+        <!-- ================= LEFT COLUMN ================= -->
+        <div class="medical-upload-column">
+          <!-- MEDICAL EXAMINATION -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Medical Examination</h3>
+                <p>Physical and employment-related examinations.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Physical Examination Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Pre-Employment Medical Examination</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Annual Medical Examination</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Work-Related Medical Examination</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Fitness-to-Work Certificate</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LABORATORY TESTS -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Laboratory Tests</h3>
+                <p>Blood, urine, and other laboratory test results.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Complete Blood Count (CBC)</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Urinalysis</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Blood Chemistry</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Blood Sugar / Glucose Test</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Lipid Profile</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Liver Function Test</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Kidney Function Test</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Other Laboratory Test</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGING & DIAGNOSTIC TESTS -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Imaging &amp; Diagnostic Tests</h3>
+                <p>X-rays and other diagnostic examination results.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Chest X-Ray</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Ultrasound</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>CT Scan</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>MRI</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Electrocardiogram (ECG/EKG)</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Other Diagnostic Test</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRUG & SUBSTANCE TESTING -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Drug &amp; Substance Testing</h3>
+                <p>Drug and substance screening records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Drug Test Result</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Alcohol Test Result</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Other Substance Screening</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VACCINATION & IMMUNIZATION -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Vaccination &amp; Immunization</h3>
+                <p>Vaccination and immunization records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Vaccination Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Immunization Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Vaccination Certificate</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Other Immunization Document</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /LEFT COLUMN -->
+
+        <!-- ================= RIGHT COLUMN ================= -->
+        <div class="medical-upload-column">
+          <!-- DENTAL & VISION -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Dental &amp; Vision</h3>
+                <p>Dental and vision examination records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Dental Examination</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Dental Certificate</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Eye / Vision Examination</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Visual Acuity Test</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Other Dental / Vision Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEDICAL HISTORY -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Medical History</h3>
+                <p>Previous illnesses, allergies, and surgery records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Medical History Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Previous Illness Records</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Allergy Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Previous Surgery Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Chronic Condition Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Family Medical History</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONSULTATION & SPECIALIST RECORDS -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Consultation &amp; Specialist Records</h3>
+                <p>Physician and specialist consultation records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Physician Consultation</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Specialist Consultation</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Follow-up Consultation</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Medical Referral</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Specialist Report</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HOSPITAL RECORDS -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Hospital Records</h3>
+                <p>Hospital admission, discharge, and surgical records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Hospitalization Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Hospital Discharge Summary</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Admission Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Operation / Surgical Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Emergency Room Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEDICATION & TREATMENT -->
+          <div class="medical-upload-category">
+            <div class="medical-category-header">
+              <div>
+                <h3>Medication &amp; Treatment</h3>
+                <p>Prescription, medication, and treatment records.</p>
+              </div>
+              <button
+                type="button"
+                class="category-toggle-button"
+                aria-expanded="false"
+                aria-label="Show or hide files"
+                onclick="
+                  this.setAttribute(
+                    'aria-expanded',
+                    this.closest('.medical-upload-category').classList.toggle(
+                      'open',
+                    ),
+                  )
+                "
+              >
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="medical-file-list">
+              <div class="medical-file-item">
+                <span>Prescription</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Medication Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Treatment Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Therapy Record</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+              <div class="medical-file-item">
+                <span>Medication History</span>
+                <div class="medical-file-actions">
+                  <label class="upload-button"
+                    >Upload File<input type="file" multiple hidden /></label
+                  ><button type="button" class="view-file-button">
+                    View Content
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /RIGHT COLUMN -->
+      </div>
+    </div>
+  </div>
+</div>

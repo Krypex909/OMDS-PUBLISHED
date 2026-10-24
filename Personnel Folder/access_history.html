@@ -1,0 +1,186 @@
+<head>
+    <link rel="stylesheet" href="../css/NormalUser/dashCSS2.css">
+    <link rel="stylesheet" href="../css/AuthPersonnel/access_history.css">
+
+</head>
+<!-- MAIN DASHBOARD CONTAINER -->
+<div class="parent-container">
+  <div class="child-container1">
+    <div class="child-container3">
+      <!-- ACCESS HISTORY CONTENT -->
+      <div class="access-history-content">
+        <!-- PAGE TITLE -->
+        <div class="access-history-header">
+          <div>
+            <h2>Access History</h2>
+            <p>
+              List of users and medical records previously accessed by this
+              personnel.
+            </p>
+          </div>
+        </div>
+        <!-- ACCESS HISTORY TABLE -->
+
+        <div class="filters">
+        <input
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9]*"
+          maxlength="10"
+          id="idFilter"
+          class="filter-input"
+          placeholder="User ID"
+        />
+
+        <input
+          type="text"
+          class="filter-input"
+          id="birthdate"
+          placeholder="Birthdate"
+          onfocus="this.type = 'date'"
+          onblur="if (!this.value) this.type = 'text';"
+        />
+
+        <button class="search-button">Search</button>
+      </div>
+
+                <!-- GRANTED REQUESTS TABLE -->
+        <h3 class="access-history-subtitle">Granted Requests</h3>
+
+        <div class="access-history-table-container">
+          <table class="access-history-table" data-rows-per-page="5">
+            <thead>
+              <tr>
+                <th>User Name</th>
+                <th>User ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Request</th>
+                <th>Downloaded File</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Maria Santos</td>
+                <td>OMDS-1002456789</td>
+                <td>September 28, 2026</td>
+                <td>09:15 AM</td>
+                <td><span class="request-status granted"> Granted </span></td>
+                <td>Medical Clearance</td>
+              </tr>
+
+              <tr>
+                <td>Prince Reyes</td>
+                <td>OMDS-1003567890</td>
+                <td>September 27, 2026</td>
+                <td>02:30 PM</td>
+                <td><span class="request-status granted"> Granted </span></td>
+                <td>Laboratory Result</td>
+              </tr>
+
+              <tr>
+                <td>Michael Banana</td>
+                <td>OMDS-1005789012</td>
+                <td>September 26, 2026</td>
+                <td>04:20 PM</td>
+                <td><span class="request-status granted"> Granted </span></td>
+                <td>Medical History</td>
+              </tr>
+
+              <tr>
+                <td>Noele Torres</td>
+                <td>OMDS-1007901234</td>
+                <td>September 24, 2026</td>
+                <td>03:05 PM</td>
+                <td><span class="request-status granted"> Granted </span></td>
+                <td>Medical Certificate</td>
+              </tr>
+
+              <tr>
+                <td>Angela Ramos</td>
+                <td>OMDS-1008012345</td>
+                <td>September 23, 2026</td>
+                <td>01:40 PM</td>
+                <td><span class="request-status granted"> Granted </span></td>
+                <td>Vaccination Record</td>
+              </tr>
+
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination"></div>
+
+        <!-- DECLINED REQUESTS TABLE -->
+        <h3 class="access-history-subtitle">Declined Requests</h3>
+
+        <div class="access-history-table-container">
+          <table class="access-history-table" data-rows-per-page="5">
+            <thead>
+              <tr>
+                <th>User Name</th>
+                <th>User ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Request</th>
+                <th>Downloaded File</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Marc Cruz</td>
+                <td>OMDS-1004678901</td>
+                <td>September 27, 2026</td>
+                <td>10:45 AM</td>
+                <td><span class="request-status declined"> Declined </span></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Jin Mendoza</td>
+                <td>OMDS-1006890123</td>
+                <td>September 25, 2026</td>
+                <td>11:10 AM</td>
+                <td><span class="request-status declined"> Declined </span></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Carlo Villanueva</td>
+                <td>OMDS-1009123456</td>
+                <td>September 23, 2026</td>
+                <td>08:50 AM</td>
+                <td><span class="request-status declined"> Declined </span></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Elena Navarro</td>
+                <td>OMDS-1010234567</td>
+                <td>September 22, 2026</td>
+                <td>03:15 PM</td>
+                <td><span class="request-status declined"> Declined </span></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Paolo Lim</td>
+                <td>OMDS-1011345678</td>
+                <td>September 21, 2026</td>
+                <td>10:05 AM</td>
+                <td><span class="request-status declined"> Declined </span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>

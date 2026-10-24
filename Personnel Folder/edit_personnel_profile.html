@@ -1,0 +1,169 @@
+<head>
+    <link rel="stylesheet" href="../css/NormalUser/dashCSS2.css">
+    <link rel="stylesheet" href="../css/AuthPersonnel/edit_personnel_profile.css">
+</head>
+
+
+
+<!-- MAIN DASHBOARD CONTAINER -->
+<div class="parent-container">
+  <div class="child-container1">
+    <div class="child-container3">
+
+    <div class="personnel-edit-container">
+      <!--EDIT PROFILE TITLE-->
+
+      <div class="edit-profile-title">Edit Personnel Profile</div>
+
+      <p class="edit-profile-description">
+        Update your authorized personnel account information and profile
+        picture.
+      </p>
+
+      <!--PROFILE INFORMATION-->
+
+      <div class="edit-profile-box">
+        <div class="section-title">Personnel Information</div>
+
+        <!-- ROW 1 -->
+
+        <div class="edit-form-row">
+          <div class="edit-form-group">
+            <label> Personnel Name </label>
+            <input
+              type="text"
+              value="Justine Paul Villamor"
+              placeholder="Enter personnel name"
+            />
+          </div>
+
+          <div class="edit-form-group">
+            <label> Personnel ID </label>
+            <input
+              type="text"
+              value="12345000001"
+              class="readonly-input"
+              readonly
+            />
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+
+        <div class="edit-form-row">
+          <div class="edit-form-group">
+            <label> Organization </label>
+            <input
+              type="text"
+              value="ABC Medical Clinic"
+              placeholder="Enter organization"
+            />
+          </div>
+
+          <div class="edit-form-group">
+            <label> Position </label>
+            <input
+              type="text"
+              value="Medical Personnel"
+              placeholder="Enter position"
+            />
+          </div>
+        </div>
+
+        <!-- ROW 3 -->
+
+        <div class="edit-form-row">
+          <div class="edit-form-group">
+            <label> Professional Credential </label>
+            <input
+              type="text"
+              value="Licensed Medical Personnel"
+              placeholder="Enter professional credential"
+            />
+          </div>
+
+          <div class="edit-form-group">
+            <label> Authorized Personnel ID </label>
+            <input
+              type="text"
+              value="98710234567"
+              class="readonly-input"
+              readonly
+            />
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="edit-form-group">
+          <label> Company / Organization Contact Details </label>
+
+          <input
+            type="text"
+            value="09123456789 / 123-4567"
+            placeholder="Enter contact details"
+          />
+        </div>
+      </div>
+
+      <!--PROFILE PICTURE SECTION-->
+
+      <div class="edit-profile-box profile-picture-section">
+        <div class="section-title">Profile Picture</div>
+
+        <div class="profile-picture-content">
+          <!-- CURRENT PROFILE PICTURE -->
+          <div class="current-profile-picture">
+            <img
+              src="../images/authorized-personnel-profile.png"
+              alt="Personnel Profile Picture"
+              class="personnel-profile-picture"
+            />
+            <p>Current Profile Picture</p>
+          </div>
+
+          <!-- UPLOAD NEW PICTURE -->
+
+          <div class="profile-upload">
+            <label> Change Profile Picture </label>
+            <input type="file" accept=".jpg,.jpeg,.png" />
+            <p class="upload-note">Accepted file types: JPG, JPEG, PNG</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCOUNT STATUS-->
+
+      <div class="edit-profile-box">
+        <div class="section-title">Account Information</div>
+
+        <div class="account-status-container">
+          <div>
+            <span class="account-label"> Account Status </span>
+            <span class="account-status"> Active </span>
+          </div>
+
+          <div>
+            <span class="account-label"> Authorized Personnel </span>
+            <span class="authorized-status"> Verified </span>
+          </div>
+        </div>
+      </div>
+
+      <!--BUTTONS-->
+
+      <!--div class="edit-buttons">
+        <button
+          onclick="loadPage('Personnel Folder/authorized_dashboard.html')"
+          type="button"
+          class="cancel-button"
+        >
+          Cancel
+        </button>
+
+        <button type="button" class="save-button">Save Changes</button>
+      </div-->
+    </div>
+  </div>
+</div>
+</div>

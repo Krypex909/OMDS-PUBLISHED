@@ -1,0 +1,268 @@
+
+/* MAIN EDIT PROFILE CONTAINER*/
+.personnel-edit-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    min-height: auto;
+    box-sizing: border-box;
+}
+
+
+/* PAGE TITLE*/
+.edit-profile-title {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #071b49;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+}
+
+.edit-profile-description {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+
+}
+
+/* EDIT PROFILE BOX*/
+.edit-profile-box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* SECTION TITLE*/
+.section-title {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #071b49;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* FORM ROW*/
+.edit-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* FORM GROUP*/
+.edit-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.edit-form-group label {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+/* INPUT*/
+.edit-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.edit-form-group input:focus {
+    border-color: #2196F3;
+}
+
+/* READ ONLY INPUT*/
+.readonly-input {
+    background-color: #eeeeee;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* PROFILE PICTURE SECTION*/
+.profile-picture-section {
+    margin-top: 10px;
+}
+
+.profile-picture-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* CURRENT PROFILE PICTURE*/
+.current-profile-picture {
+    width: 180px;
+    text-align: center;
+}
+
+.personnel-profile-picture {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #2196F3;
+}
+
+.current-profile-picture p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* PROFILE UPLOAD*/
+.profile-upload {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-upload label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.profile-upload input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.upload-note {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #777;
+    margin-top: 6px;
+}
+
+/* ACCOUNT INFORMATION*/
+.account-status-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.account-label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.account-status {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    color: #2e7d32;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.authorized-status {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #eef7ff;
+    border: 1px solid #b9dcfa;
+    border-radius: 4px;
+    color: #2196F3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* BUTTON CONTAINER*/
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* CANCEL BUTTON*/
+.cancel-button {
+    padding: 10px 20px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #dddddd;
+}
+
+/* SAVE BUTTON*/
+.save-button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #1976D2;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 900px) {
+
+    .edit-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-picture-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-upload {
+        width: 100%;
+    }
+
+    .account-status-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .edit-buttons {
+        justify-content: center;
+    }
+}

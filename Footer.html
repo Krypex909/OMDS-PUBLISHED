@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<!-- FOOTER -->
+<footer class="page-footer">
+  <div class="footer-content">
+
+    <!-- ABOUT OMDS -->
+    <div class="footer-section footer-about">
+      <h3>OMDS</h3>
+      <p class="footer-subtitle">Online Medical Data Storage</p>
+      <p>
+        A web-based health information system designed to help individuals
+        organize, store, and manage their personal medical records digitally.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h4>About</h4>
+      <a href="#" onclick="showFooterInfo('about'); return false;">About Us</a>
+      <a href="#" onclick="showFooterInfo('mission'); return false;">Our Mission</a>
+      <a href="#" onclick="showFooterInfo('vision'); return false;">Our Vision</a>
+    </div>
+
+    <!-- INFORMATION -->
+    <div class="footer-section">
+      <h4>Information</h4>
+      <a href="#" onclick="showFooterInfo('privacy'); return false;">Privacy Policy</a>
+      <a href="#" onclick="showFooterInfo('terms'); return false;">Terms and Conditions</a>
+      <a href="#" onclick="showFooterInfo('security'); return false;">Access and Security</a>
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 Online Medical Data Storage (OMDS). All rights reserved.</p>
+    <p>Your Medical Information, Organized Digitally.</p>
+  </div>
+</footer>
+
+<!-- FOOTER INFORMATION MODAL -->
+<div id="footerInfoModal" class="footer-modal" aria-hidden="true">
+  <div class="footer-modal-content" role="dialog" aria-modal="true"
+       aria-labelledby="footerModalTitle">
+    <h2 id="footerModalTitle"></h2>
+    <p id="footerModalText"></p>
+  </div>
+</div>
+
+<script>
+  const footerInfo = {
+    about: {
+      title: "About Us",
+      text: "Online Medical Data Storage (OMDS) is a web-based health information system designed to help users organize and manage their personal medical records. It supports digital record storage, medical document uploads, and controlled information sharing with authorized personnel."
+    },
+    mission: {
+      title: "Our Mission",
+      text: "To provide a convenient and organized digital platform that helps individuals manage their medical information while promoting responsible access to personal health records."
+    },
+    vision: {
+      title: "Our Vision",
+      text: "To contribute to a more accessible and digitally organized healthcare information environment where medical records can be managed efficiently and responsibly."
+    },
+    privacy: {
+      title: "Privacy Policy",
+      text: "OMDS is designed to support the responsible handling of personal medical information. Users should be informed about how their records are collected, stored, accessed, and shared. Refer to the system's implemented privacy procedures for the applicable rules."
+    },
+    terms: {
+      title: "Terms and Conditions",
+      text: "Users are expected to provide accurate information, protect their account credentials, and use OMDS responsibly. Access to medical records must follow applicable permissions and system rules."
+    },
+    security: {
+      title: "Access and Security",
+      text: "OMDS is intended to support controlled access to medical records and monitoring of record access. Actual access restrictions, authorization checks, and security protections depend on the features implemented in the system."
+    }
+  };
+
+  function showFooterInfo(section) {
+    const info = footerInfo[section];
+
+    if (!info) return;
+
+    document.getElementById("footerModalTitle").textContent = info.title;
+    document.getElementById("footerModalText").textContent = info.text;
+    document.getElementById("footerInfoModal").classList.add("active");
+    document.getElementById("footerInfoModal").setAttribute("aria-hidden", "false");
+    // document.querySelector(".footer-modal-close").focus();
+  }
+
+  function closeFooterInfo() {
+    document.getElementById("footerInfoModal").classList.remove("active");
+    document.getElementById("footerInfoModal").setAttribute("aria-hidden", "true");
+  }
+
+  document.getElementById("footerInfoModal").addEventListener("click", function(event) {
+    if (event.target === this) closeFooterInfo();
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") closeFooterInfo();
+  });
+</script>
+
+</body>
+</html>

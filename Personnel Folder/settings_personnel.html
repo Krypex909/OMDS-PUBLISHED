@@ -1,0 +1,514 @@
+<head>
+  <link rel="stylesheet" href="../css/NormalUser/dashCSS2.css" />
+  <link rel="stylesheet" href="../css/AuthPersonnel/settings_personnel.css" />
+</head>
+<!-- MAIN DASHBOARD CONTAINER -->
+<div class="parent-container">
+  <div class="child-container1">
+    <div class="child-container3">
+      <!-- SEARCHED USER PROFILE -->
+      <div class="settings-page">
+        <!-- PAGE TITLE -->
+        <div class="settings-header">
+          <h2>Personnel Settings</h2>
+          <p>
+            Manage your account, security, notifications, and system
+            preferences.
+          </p>
+        </div>
+        <!--ACCOUNT SETTINGS-->
+
+        <div class="personnel-edit-container">
+          <!--EDIT PROFILE TITLE-->
+
+          <!--PROFILE INFORMATION-->
+
+          <div class="edit-profile-box">
+            <div class="section-title">Personnel Information</div>
+
+            <!-- ROW 1 -->
+
+            <div class="edit-form-row">
+              <div class="edit-form-group">
+                <label> Personnel Name </label>
+                <input
+                  type="text"
+                  value="Justine Paul Villamor"
+                  placeholder="Enter personnel name"
+                />
+              </div>
+
+              <div class="edit-form-group">
+                <label> Personnel ID </label>
+                <input
+                  type="text"
+                  value="12345000001"
+                  class="readonly-input"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <!-- ROW 2 -->
+
+            <div class="edit-form-row">
+              <div class="edit-form-group">
+                <label> Organization </label>
+                <input
+                  type="text"
+                  value="ABC Medical Clinic"
+                  placeholder="Enter organization"
+                />
+              </div>
+
+              <div class="edit-form-group">
+                <label> Position </label>
+                <input
+                  type="text"
+                  value="Medical Personnel"
+                  placeholder="Enter position"
+                />
+              </div>
+            </div>
+
+            <!-- ROW 3 -->
+
+            <div class="edit-form-row">
+              <div class="edit-form-group">
+                <label> Professional Credential </label>
+                <input
+                  type="text"
+                  value="Licensed Medical Personnel"
+                  placeholder="Enter professional credential"
+                />
+              </div>
+
+              <div class="edit-form-group">
+                <label> Authorized Personnel ID </label>
+                <input
+                  type="text"
+                  value="98710234567"
+                  class="readonly-input"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="edit-form-group">
+              <label> Company / Organization Contact Details </label>
+
+              <input
+                type="text"
+                value="09123456789 / 123-4567"
+                placeholder="Enter contact details"
+              />
+            </div>
+          </div>
+
+          <!--PROFILE PICTURE SECTION-->
+
+          <div class="edit-profile-box profile-picture-section">
+            <div class="section-title">Profile Picture</div>
+
+            <div class="profile-picture-content">
+              <!-- CURRENT PROFILE PICTURE -->
+              <div class="current-profile-picture">
+                <img
+                  src="../images/authorized-personnel-profile.png"
+                  alt="Personnel Profile Picture"
+                  class="personnel-profile-picture"
+                />
+                <p>Current Profile Picture</p>
+              </div>
+
+              <!-- UPLOAD NEW PICTURE -->
+
+              <div class="profile-upload">
+                <label> Change Profile Picture </label>
+                <input type="file" accept=".jpg,.jpeg,.png" />
+                <p class="upload-type">Accepted file types: JPG, JPEG, PNG</p>
+                <p class="upload-size">File Size: Maximum 2MB</p>
+              </div>
+            </div>
+
+              <div class="edit-buttons">
+              <button
+                onclick="loadPage('Personnel Folder/authorized_dashboard.html')"
+                type="button"
+                class="cancel-button"
+              >
+                Cancel
+              </button>
+
+              <button type="button" class="save-button">Save Changes</button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!--BUTTONS-->
+
+        <section class="settings-section">
+          <div class="settings-section-title">
+            <h3>Account Settings</h3>
+            <p>Manage your personnel account information.</p>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Email Address</h4>
+              <p>
+                Manage the email address associated with your personnel account.
+              </p>
+            </div>
+
+            <div class="settings-item-action">
+              <input
+                type="email"
+                value="personnel@example.com"
+                class="settings-input"
+              />
+            </div>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Contact Number</h4>
+              <p>Update your registered contact number.</p>
+            </div>
+
+            <div class="settings-item-action">
+              <input type="text" value="09123456789" class="settings-input" />
+            </div>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Change Password</h4>
+              <p>Update your personnel account password.</p>
+            </div>
+
+            <div class="settings-item-action">
+              <button class="settings-button">Change Password</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECURITY SETTINGS-->
+
+        <section class="settings-section">
+          <div class="settings-section-title">
+            <h3>Security Settings</h3>
+            <p>Protect your personnel account and login sessions.</p>
+          </div>
+
+          <!-- LOGIN NOTIFICATIONS -->
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Login Notifications</h4>
+
+              <p>
+                Receive a notification when your personnel account is
+                successfully logged in.
+              </p>
+            </div>
+
+            <div class="settings-item-action">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- SESSION TIMEOUT -->
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Session Timeout</h4>
+
+              <p>
+                Automatically log out your personnel account after a period of
+                inactivity.
+              </p>
+            </div>
+
+            <div class="settings-item-action">
+              <select class="settings-select">
+                <option>15 Minutes</option>
+                <option selected>30 Minutes</option>
+                <option>60 Minutes</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- LOG OUT ALL DEVICES -->
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Log Out From All Devices</h4>
+
+              <p>End all active personnel account sessions on other devices.</p>
+            </div>
+
+            <div class="settings-item-action">
+              <button class="settings-button danger-button">
+                Log Out All Devices
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- SECURITY ACTIVITY -->
+        <!-- ========================= -->
+
+        <section class="settings-section">
+          <div class="settings-section-title">
+            <h3>Security Activity</h3>
+            <p>Review important security activities involving your account.</p>
+          </div>
+
+          <div class="security-table-container">
+            <table class="security-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Activity</th>
+                  <th>Device</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Sept 28, 2026</td>
+                  <td>Successful Login</td>
+                  <td>Windows / Chrome</td>
+                  <td>
+                    <span class="activity-success"> Successful </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Sept 27, 2026</td>
+                  <td>Password Changed</td>
+                  <td>Windows / Chrome</td>
+                  <td>
+                    <span class="activity-success"> Completed </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Sept 25, 2026</td>
+                  <td>Successful Logout</td>
+                  <td>Windows / Chrome</td>
+                  <td>
+                    <span class="activity-success"> Completed </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- NOTIFICATION SETTINGS -->
+        <!-- ========================= -->
+
+        <section class="settings-section">
+          <div class="settings-section-title">
+            <h3>Notification Settings</h3>
+
+            <p>
+              Choose which personnel account notifications you want to receive.
+            </p>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Access Request</h4>
+
+              <p>
+                Notify you when a user sends an access request for their medical
+                information.
+              </p>
+            </div>
+
+            <div class="settings-item-action">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Access Granted</h4>
+
+              <p>
+                Notify you when a user grants access to their medical
+                information.
+              </p>
+            </div>
+
+            <div class="settings-item-action">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Access Expiration</h4>
+
+              <p>Notify you when an authorized access period has expired.</p>
+            </div>
+
+            <div class="settings-item-action">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Download Notification</h4>
+
+              <p>
+                Notify you when an authorized medical document download is
+                completed.
+              </p>
+            </div>
+
+            <div class="settings-item-action">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- SYSTEM PREFERENCES -->
+        <!-- ========================= -->
+
+        <section class="settings-section">
+          <div class="settings-section-title">
+            <h3>System Preferences</h3>
+
+            <p>Customize your OMDS personnel interface.</p>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Theme</h4>
+
+              <p>Select the appearance of the personnel dashboard.</p>
+            </div>
+
+            <div class="settings-item-action">
+              <select class="settings-select">
+                <option selected>Light</option>
+                <option>Dark</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="settings-item">
+            <div class="settings-item-info">
+              <h4>Language</h4>
+
+              <p>Select the language used by the system interface.</p>
+            </div>
+
+            <div class="settings-item-action">
+              <select class="settings-select">
+                <option selected>English</option>
+                <option>Filipino</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- ACCESS INFORMATION -->
+        <!-- ========================= -->
+
+        <section class="settings-section access-information">
+          <div class="settings-section-title">
+            <h3>Access & Authorization Information</h3>
+
+            <p>
+              Information about how access to user medical information works.
+            </p>
+          </div>
+
+          <div class="access-rule">
+            <span class="rule-icon">✓</span>
+
+            <div>
+              <strong>User Permission Required</strong>
+
+              <p>
+                Personnel can access a user's medical information only after the
+                user grants access.
+              </p>
+            </div>
+          </div>
+
+          <div class="access-rule">
+            <span class="rule-icon">✓</span>
+
+            <div>
+              <strong>Access Duration</strong>
+
+              <p>
+                Authorized access remains active for 5 minutes after the user
+                grants access.
+              </p>
+            </div>
+          </div>
+
+          <div class="access-rule">
+            <span class="rule-icon">✓</span>
+
+            <div>
+              <strong>Automatic Expiration</strong>
+
+              <p>
+                Access automatically expires when the authorized 5-minute period
+                ends.
+              </p>
+            </div>
+          </div>
+
+          <div class="access-rule">
+            <span class="rule-icon">✓</span>
+
+            <div>
+              <strong>Activity Recording</strong>
+
+              <p>
+                Access requests, granted access, expired access, and downloaded
+                files are recorded in the system.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SAVE BUTTON -->
+
+        <div class="settings-save-container">
+          <button class="save-settings-button">Save Settings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

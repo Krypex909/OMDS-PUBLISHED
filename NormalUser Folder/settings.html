@@ -1,0 +1,745 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/NormalUser/settings.css" />
+    <link rel="stylesheet" href="../css/NormalUser/dashCSS2.css" />
+  </head>
+
+  <!-- SETTINGS -->
+  <div class="parent-container">
+    <div class="child-container1">
+      <div class="child-container3">
+        <!-- SETTINGS CONTENT -->
+
+        <div class="user-settings">
+          <!-- PAGE HEADER -->
+
+          <div class="settings-header">
+            <h2>Settings</h2>
+            <p>
+              Manage your OMDS account, medical information access, privacy,
+              security, and preferences.
+            </p>
+          </div>
+
+          <div class="column-title">Edit User Profile</div>
+
+      <!-- PROFILE PICTURE -->
+      <div class="edit-profile-area">
+        <img
+          class="edit-profile-picture"
+          src="../images/User-Profile.jpg"
+          alt="Profile Picture"
+        />
+
+        <div class="profile-picture-controls">
+          <label for="profile-picture-upload" class="upload-picture-button">
+            Change Profile Picture
+          </label>
+
+          <input
+            type="file"
+            id="profile-picture-upload"
+            name="profile_picture"
+            accept="image/*"
+          />
+          <span class="picture-note">JPG, PNG or JPEG</span>
+        </div>
+      </div>
+
+      <!-- PROFILE INFORMATION -->
+      <div class="edit-information-grid">
+        <!-- FIRST NAME -->
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" placeholder="Enter first name" />
+        </div>
+
+        <!-- LAST NAME -->
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name" placeholder="Enter last name" />
+        </div>
+
+        <!-- MIDDLE NAME -->
+        <div class="form-group">
+          <label for="middle-name">Middle Name</label>
+          <input type="text" id="middle-name" name="middle_name" placeholder="Enter middle name" />
+        </div>
+
+        <!-- BLOOD TYPE -->
+        <div class="form-group">
+          <label for="blood-type">Blood Type</label>
+          <select id="blood-type" name="blood_type">
+            <option value="">Select Blood Type</option>
+
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
+
+        <!-- ACCOUNT NUMBER -->
+        <div class="form-group">
+          <label for="account-number">Account Number</label>
+          <input type="text" id="account-number" name="account_number" value="1234567890" readonly />
+        </div>
+
+        <!-- DATE OF BIRTH -->
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth</label>
+          <input type="date" id="date-of-birth" name="date_of_birth" />
+        </div>
+
+        <!-- SEX -->
+        <div class="form-group">
+          <label for="sex">Sex</label>
+          <select id="sex" name="sex">
+            <option value="">Select Sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- RELIGION -->
+        <div class="form-group">
+          <label for="religion">Religion</label>
+          <select id="religion" name="religion">
+            <option value="">Select Religion</option>
+            <option value="roman-catholic">Roman Catholic</option>
+            <option value="islam">Islam</option>
+            <option value="iglesia-ni-cristo">Iglesia ni Cristo</option>
+            <option value="born-again">Born Again Christian</option>
+            <option value="protestant">Protestant</option>
+            <option value="other">Other</option>
+            <option value="prefer-not">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="form-group full-width">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" placeholder="Enter complete address"></textarea>
+        </div>
+
+        <!-- CONTACT NUMBER -->
+        <div class="form-group">
+          <label for="contact-number">Contact Number</label>
+          <input type="tel" id="contact-number" name="contact_number" placeholder="09XXXXXXXXX" />
+        </div>
+
+        <!-- EMERGENCY CONTACT -->
+        <div class="form-group">
+          <label for="emergency-contact">Emergency Contact</label>
+          <input type="text" id="emergency-contact" name="emergency_contact" placeholder="Enter emergency contact" />
+        </div>
+
+        <!-- EMERGENCY CONTACT NUMBER -->
+
+        <div class="form-group">
+          <label for="emergency-contact-number">Emergency Contact Number</label>
+          <input type="tel" id="emergency-contact-number" name="emergency_contact_number" placeholder="09XXXXXXXXX" />
+        </div>
+      </div>
+
+    <!--EDIT MEDICAL INFORMATION-->
+    <div class="child-container3">
+      <div class="column-title">Edit Medical Information</div>
+
+      <div class="medical-grid">
+
+        <!--  LEFT COLUMN  -->
+        <div class="medical-column">
+
+          <!--MEDICAL CONDITIONS-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Medical Conditions</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="asthma" />Asthma</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="hypertension" />Hypertension</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="diabetes" />Diabetes</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="heart-disease" />Heart Disease</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="kidney-disease" />Kidney Disease</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_conditions[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medical_condition_other" placeholder="Specify other medical condition" />
+            </div>
+          </div>
+
+          <!--ALLERGIES-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Allergies</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="food" />Food Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="drug" />Drug / Medication Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="dust" />Dust Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="pollen" />Pollen Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="insect" />Insect Allergy</label>
+              <label class="medical-checkbox"><input type="checkbox" name="allergies[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="allergy_other" placeholder="Specify other allergy" />
+            </div>
+          </div>
+
+          <!--CURRENT MEDICATIONS-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Current Medications</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="blood-pressure" />Blood Pressure Medication</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="diabetes" />Diabetes Medication</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="pain-reliever" />Pain Reliever</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="antibiotic" />Antibiotic</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="vitamins" />Vitamins / Supplements</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medications[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medication_other" placeholder="Specify other medication" />
+            </div>
+          </div>
+
+        </div>
+        
+
+        <!--  RIGHT COLUMN  -->
+        <div class="medical-column">
+
+          <!--MEDICAL HISTORY-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">Medical History</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="surgery" />Previous Surgery</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="hospitalization" />Previous Hospitalization</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="serious-illness" />Previous Serious Illness</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="injury" />Previous Injury</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="none" />No Significant Medical History</label>
+              <label class="medical-checkbox"><input type="checkbox" name="medical_history[]" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medical_history_other" placeholder="Specify other medical history" />
+            </div>
+          </div>
+
+          <!--GENERAL MEDICAL STATUS-->
+          <div class="medical-section">
+            <div class="medical-section-header">
+              <div class="sub-title">General Medical Status</div>
+              <button type="button" class="category-toggle-button" aria-expanded="false" aria-label="Show or hide options"
+                onclick="this.setAttribute('aria-expanded', this.closest('.medical-section').classList.toggle('open'))">
+                <span class="category-toggle-arrow"></span>
+              </button>
+            </div>
+            <div class="option-display">
+              <label class="medical-radio"><input type="radio" name="medical_status" value="physically-fit" />Physically Fit</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="observation" />Under Medical Observation</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="medication" />Under Medication</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="existing-condition" />With Existing Condition</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="no-concern" />No Current Medical Concern</label>
+              <label class="medical-radio"><input type="radio" name="medical_status" value="other" />Other</label>
+            </div>
+            <div class="other-specify">
+              <input type="text" name="medical_status_other" placeholder="Specify other medical status" />
+            </div>
+          </div>
+
+        <!-- /RIGHT COLUMN -->
+        <!--SAVE / CANCEL-->
+      <div class="edit-profile-actions">
+        <button type="button" class="cancel-button">Cancel</button>
+
+        <button type="submit" class="save-button">Save Changes</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+          <!-- 1. ACCOUNT INFORMATION -->
+          <div class="settings-section">
+            <div class="sub-title">Account Information</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Account Number</label>
+
+                <input type="text" value="1234567890" readonly />
+                <small>Your Account Number cannot be changed.</small>
+              </div>
+
+              <div class="form-group">
+                <label>Email Address</label>
+
+                <input type="email" value="user@example.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Contact Number</label>
+                <input type="text" value="09123456789" />
+              </div>
+
+              <div class="form-group">
+                <label>Username</label>
+                <input type="text" value="juan.delacruz" />
+              </div>
+            </div>
+
+            <div class="settings-action-row">
+              <button type="button" class="outline-button">
+                Update Account Information
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. PASSWORD & SECURITY -->
+          <div class="settings-section">
+            <div class="sub-title">Password &amp; Security</div>
+
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <strong>Change Password</strong>
+                <p>
+                  Change your OMDS account password regularly to help protect
+                  your medical information.
+                </p>
+              </div>
+
+              <button type="button" class="outline-button">
+                Change Password
+              </button>
+            </div>
+
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <strong>Login Notifications</strong>
+                <p>
+                  Receive a notification when your account is successfully
+                  logged in.
+                </p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span
+              ></label>
+            </div>
+
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <strong>Log Out From All Devices</strong>
+                <p>End all active OMDS sessions on other devices.</p>
+              </div>
+              <button type="button" class="danger-outline-button">
+                Log Out All Devices
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. MEDICAL INFORMATION ACCESS -->
+          <div class="settings-section">
+            <div class="sub-title">Medical Information Access</div>
+
+            <!-- ALLOW ACCESS -->
+            <div class="access-main-control">
+              <div class="access-description">
+                <strong
+                  >Allow Authorized Personnel to Access My Medical
+                  Information</strong
+                >
+                <p>
+                  When enabled, authorized personnel may request access to your
+                  medical information. You must grant permission before your
+                  information can be viewed or downloaded.
+                </p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <!-- ACCESS DURATION -->
+            <div class="access-duration-section">
+              <div class="access-setting-description">
+                <strong>Access Duration</strong>
+                <p>
+                  Select how long authorized personnel can access your medical
+                  information after you grant permission.
+                </p>
+              </div>
+
+              <!-- DURATION BUTTONS -->
+              <div class="duration-options">
+                <input
+                  type="radio"
+                  name="access-duration"
+                  id="duration5"
+                  value="5"
+                />
+
+                <label for="duration5" class="duration-button">
+                  5 Minutes</label
+                >
+
+                <input
+                  type="radio"
+                  name="access-duration"
+                  id="duration10"
+                  value="10"
+                  checked
+                />
+
+                <label for="duration10" class="duration-button">
+                  10 Minutes
+                </label>
+
+                <input
+                  type="radio"
+                  name="access-duration"
+                  id="duration15"
+                  value="15"
+                />
+
+                <label for="duration15" class="duration-button">
+                  15 Minutes
+                </label>
+
+                <input
+                  type="radio"
+                  name="access-duration"
+                  id="duration20"
+                  value="20"
+                />
+
+                <label for="duration20" class="duration-button">
+                  20 Minutes
+                </label>
+              </div>
+
+              <div class="selected-duration-message">
+                Access duration can be set to
+                <strong>5, 10, 15, or 20 minutes.</strong>
+              </div>
+            </div>
+
+            <!-- REVOKE AFTER DOWNLOAD -->
+            <div class="access-rule">
+              <div class="access-rule-content">
+                <strong>Revoke Access After Download</strong>
+                <p>
+                  Automatically revoke personnel access after the requested
+                  medical information has been successfully downloaded.
+                </p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <!-- AUTOMATIC EXPIRATION -->
+            <div class="access-rule">
+              <div class="access-rule-content">
+                <strong>Automatic Access Expiration</strong>
+                <p>
+                  Access automatically ends when the selected duration expires.
+                </p>
+              </div>
+
+              <span class="status-badge">Enabled</span>
+            </div>
+
+            <!-- ACCESS RECORDING -->
+            <div class="access-rule">
+              <div class="access-rule-content">
+                <strong>Access Activity Recording</strong>
+                <p>
+                  Access requests, granted access, medical information views,
+                  downloads, revocations, and expired sessions are recorded in
+                  your Visitor History.
+                </p>
+              </div>
+
+              <span class="status-badge">Enabled</span>
+            </div>
+
+            <!-- SECURITY NOTICE -->
+            <div class="access-security-notice">
+              <div class="security-notice-icon">!</div>
+
+              <div>
+                <strong> OMDS Security Notice </strong>
+
+                <p>
+                  You control how long authorized personnel can access your
+                  information. Access is automatically revoked after the
+                  selected duration or after a successful download when this
+                  option is enabled.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. NOTIFICATIONS -->
+
+          <div class="settings-section">
+            <div class="sub-title">Notifications</div>
+
+            <div class="notification-grid">
+              <label class="check-item">
+                <input type="checkbox" checked />
+
+                <span>
+                  <strong> Access Requests </strong>
+
+                  <small>
+                    Notify me when personnel request access to my medical
+                    information.
+                  </small>
+                </span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" checked />
+
+                <span>
+                  <strong> Medical Information Viewed </strong>
+
+                  <small>
+                    Notify me when authorized personnel view my medical
+                    information.
+                  </small>
+                </span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" checked />
+
+                <span>
+                  <strong> QR Code Scanned </strong>
+
+                  <small> Notify me when my OMDS QR code is scanned. </small>
+                </span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" checked />
+
+                <span>
+                  <strong> Access Expiration </strong>
+
+                  <small> Notify me when authorized access expires. </small>
+                </span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" checked />
+
+                <span>
+                  <strong> File Download </strong>
+
+                  <small>
+                    Notify me when an authorized medical file is downloaded.
+                  </small>
+                </span>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" />
+
+                <span>
+                  <strong> Email Updates </strong>
+
+                  <small>
+                    Send important OMDS notifications to my registered email.
+                  </small>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 5. PRIVACY -->
+
+          <div class="settings-section">
+            <div class="sub-title">Privacy</div>
+
+            <label class="privacy-option">
+              <input type="checkbox" checked />
+
+              <span>
+                <strong> Allow My Account to Be Found by Username </strong>
+
+                <small>
+                  Authorized personnel can search for your account using your
+                  registered username.
+                </small>
+              </span>
+            </label>
+
+            <label class="privacy-option">
+              <input type="checkbox" checked />
+
+              <span>
+                <strong> Allow QR Code Identification </strong>
+
+                <small>
+                  Allow your OMDS QR code to identify your account when used by
+                  authorized personnel.
+                </small>
+              </span>
+            </label>
+
+            <label class="privacy-option">
+              <input type="checkbox" checked />
+
+              <span>
+                <strong> Record Visitor Activity </strong>
+                <small>
+                  Keep a record of authorized personnel who accessed your
+                  medical information.
+                </small>
+              </span>
+            </label>
+          </div>
+
+          <!-- 6. DISPLAY PREFERENCES -->
+          <div class="settings-section">
+            <div class="sub-title">Display Preferences</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label> Language </label>
+                <select>
+                  <option selected>English</option>
+                  <option>Filipino</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label> Text Size </label>
+                <select>
+                  <option>Small</option>
+
+                  <option selected>Medium</option>
+
+                  <option>Large</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label> Theme </label>
+              <select>
+                <option>Light Mode</option>
+                <option>Dark Mode</option>
+                <option selected>Automatic (Device Settings)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 7. SECURITY ACTIVITY -->
+          <div class="settings-section">
+            <div class="sub-title">Security Activity</div>
+
+            <div class="activity-list">
+              <div class="activity-row">
+                <div>
+                  <strong> Successful Login </strong>
+                  <small> Windows • Chrome </small>
+                </div>
+                <span> Sept. 28, 2026 • 9:42 AM </span>
+              </div>
+
+              <div class="activity-row">
+                <div>
+                  <strong> QR Code Scanned </strong>
+                  <small> Authorized Personnel </small>
+                </div>
+                <span> Sept. 27, 2026 • 2:15 PM </span>
+              </div>
+
+              <div class="activity-row">
+                <div>
+                  <strong> Password Changed </strong>
+                  <small> Windows • Chrome </small>
+                </div>
+                <span> Sept. 25, 2026 • 4:30 PM </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. DATA & ACCOUNT -->
+          <div class="settings-section">
+            <div class="sub-title">Data &amp; Account</div>
+
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <strong> Deactivate Account </strong>
+                <p>Temporarily disable your OMDS account.</p>
+              </div>
+              <button type="button" class="danger-outline-button">
+                Deactivate
+              </button>
+            </div>
+
+            <div class="delete-account-box">
+              <div>
+                <strong> Delete Account </strong>
+                <p>
+                  Permanently delete your OMDS account and associated medical
+                  files. This action should require confirmation before
+                  proceeding.
+                </p>
+              </div>
+
+              <button type="button" class="delete-button">
+                Delete Account
+              </button>
+            </div>
+          </div>
+
+          <!-- SAVE SETTINGS -->
+          <div class="save-settings-container">
+            <button type="button" class="save-settings-button">
+              Save Settings
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

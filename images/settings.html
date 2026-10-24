@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="headerbuttons.css">
+        <link rel="stylesheet" href="dashCSS2.css">
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+        </style>
+
+        <link rel="stylesheet" href="leftnavigation.css">
+        <link rel="stylesheet" href="leftnavigationbutton.css">
+
+
+    </head>
+
+    <body>
+
+        <!--LEFT NAVIGATION-->
+
+        <div class="left-navigation">
+            <img
+                class="logo"
+                src="login page images/OMDS Logo-cropped no word in bottom.svg"
+                alt=""
+            >
+            <div class="button-container">
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/dashboard.svg"
+                        alt=""
+                    >
+                    Dash Board
+                </button>
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/upload.svg"
+                        alt=""
+                    >
+                    Upload Medical File
+                </button>
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/download.svg"
+                        alt=""
+                    >
+                    Download Files
+                </button>
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/history.svg"
+                        alt=""
+                    >
+                    Visitor History
+                </button>
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/edit.svg"
+                        alt=""
+                    >
+                    Edit Profile
+                </button>
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/settings.svg"
+                        alt=""
+                    >
+                    Settings
+                </button>
+
+                <button class="buttons">
+                    <img
+                        class="icons"
+                        src="icons/logout.svg"
+                        alt=""
+                    >
+                    Log Out
+                </button>
+            </div>
+        </div>
+
+
+        <!--HEADER-->
+
+        <div class="header">
+
+            <div class="left-area">
+
+                <img
+                    src="icons/ohms text.png"
+                    alt=""
+                >
+            </div>
+
+            <div class="middle-area">
+
+                <input
+                    class="search-box"
+                    type="text"
+                    placeholder="Search Username"
+                >
+                <input
+                    class="search-box"
+                    type="text"
+                    placeholder="User ID"
+                >
+                <button class="qr-button">
+                    <img
+                        class="search-icon"
+                        src="icons/qr_code_scanner.svg"
+                        alt=""
+                    >
+                </button>
+            </div>
+        </div>
+
+
+        <!--SETTINGS-->
+
+        <div class="parent-container">
+            <div class="child-container1">
+
+                <div class="child-container3">
+                    <div class="column-title">
+                        Preferences and Privacy
+                    </div>
+
+                    <!-- ALLOW VIEW -->
+                    <button onclick="document.getElementById('view-time').value = 5">
+                        Allow view
+                    </button>
+                    <input
+                        id="view-time"
+                        type="number"
+                        min="1"
+                        value="5"
+                    >
+                    minutes
+
+                    <!-- NOTIFICATIONS -->
+                    <div class="sub-title">
+                        Notifications
+                    </div>
+                    <div class="condition-grid">
+                        <label class="check-item">
+                            <input type="checkbox" checked>
+                            Notify me when someone views my profile
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" checked>
+                            Notify me when my QR code is scanned
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox">
+                            Send updates to my email
+                        </label>
+                    </div>
+
+                    <!-- DISPLAY -->
+                    <div class="sub-title">
+                        Display
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>
+                                Language
+                            </label>
+                            <select>
+                                <option>English</option>
+                                <option>Filipino</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                Text Size
+                            </label>
+                            <select>
+                                <option>Small</option>
+                                <option selected>Medium</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Theme
+                        </label>
+                        <select>
+                            <option>Light Mode</option>
+                            <option>Dark Mode</option>
+                            <option selected>Automatic (Device Settings)</option>
+                        </select>
+                    </div>
+
+                    <!-- PRIVACY -->
+                    <div class="sub-title">
+                        Privacy
+                    </div>
+                    <div class="privacy-box">
+                        <label>
+                            <input type="checkbox" checked>
+                            Allow medical staff to view my medical information
+                        </label>
+                        <br><br>
+                        <label>
+                            <input type="checkbox">
+                            Allow my profile to be found by searching my username
+                        </label>
+                    </div>
+
+                    <button>
+                        Save Preferences
+                    </button>
+
+                    <!-- DELETE ACCOUNT -->
+                    <div class="sub-title">
+                        Delete Account
+                    </div>
+                    <p>
+                        Deleting your account will remove your profile and all uploaded medical files.
+                    </p>
+                    <button>
+                        Delete Account
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

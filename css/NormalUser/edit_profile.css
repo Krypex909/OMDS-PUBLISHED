@@ -1,0 +1,490 @@
+/*MAIN PAGE*/
+
+.edit-main-content {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ORIGINAL OUTER CONTAINER*/
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.child-container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff7f7;
+    border: 3px solid #527deb;
+    padding: 10px;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.child-container3 {
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.column-title {
+    margin: 0 0 12px 0;
+    padding-bottom: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #071b49;
+    border-bottom: 2px solid #527deb;
+}
+
+/*PROFILE IMAGE*/
+
+.edit-profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 14px;
+    gap: 12px;
+}
+
+.edit-profile-picture {
+    width: 100px;
+    object-fit: cover;
+    border: 2px solid #527deb;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* PROFILE IMAGE CONTROLS */
+
+.profile-picture-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* HIDE FILE INPUT */
+
+#profile-picture-upload {
+    display: none;
+}
+
+/* CHANGE BUTTON */
+
+.upload-picture-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    background-color: #527deb;
+    color: white;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FILE NOTE */
+
+.picture-note {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* PROFILE INFORMATION*/
+
+.edit-information-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 10px;
+    width: 100%;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* LABEL */
+
+.form-group label {
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #080808;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 7px 9px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #222;
+    outline: none;
+}
+
+
+/* INPUT / SELECT */
+
+.form-group input,
+.form-group select {
+    height: 36px;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+    height: 55px;
+    resize: vertical;
+}
+
+
+/* FULL WIDTH ADDRESS */
+
+.form-group.full-width {
+    grid-column: 1 / 3;
+}
+
+
+/* ACCOUNT NUMBER */
+
+.form-group input[readonly] {
+    background-color: #eeeeee;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #527deb;
+}
+
+/* MEDICAL 2-COLUMN GRID */
+.medical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+    width: 100%;
+}
+
+.medical-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+/* MEDICAL SECTION*/
+
+.medical-section {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* MEDICAL TITLE*/
+
+.sub-title {
+    margin: 0 0 9px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #071b49;
+}
+
+
+/* ===== NEW: SECTION HEADER + DROPDOWN TOGGLE ===== */
+
+/* Header row: title on the left, toggle button on the right */
+.medical-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Title inside the header has no extra bottom margin */
+.medical-section-header .sub-title {
+    margin: 0;
+}
+
+/* Toggle button */
+.category-toggle-button {
+    display: flex;
+    flex: 0 0 36px;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #527deb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.category-toggle-button:hover {
+    background-color: #527deb;
+}
+
+/* Arrow (points down when closed) */
+.category-toggle-arrow {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-right: 2px solid #527deb;
+    border-bottom: 2px solid #527deb;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease, margin 0.2s ease;
+}
+
+.category-toggle-button:hover .category-toggle-arrow {
+    border-color: white;
+}
+
+/* COLLAPSED BY DEFAULT */
+.medical-section:not(.open) > .option-display,
+.medical-section:not(.open) > .other-specify {
+    display: none;
+}
+
+.medical-section:not(.open) .medical-section-header {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* OPEN STATE */
+.medical-section.open > .option-display {
+    margin-top: 12px;
+}
+
+.medical-section.open .category-toggle-arrow {
+    margin-top: 4px;
+    transform: rotate(-135deg);
+}
+
+/* ===== END NEW ===== */
+
+
+/* MEDICAL OPTIONS*/
+
+.option-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    width: 100%;
+}
+
+
+/* CHECKBOX / RADIO*/
+
+.medical-checkbox,
+.medical-radio {
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 6px 8px;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+
+.medical-checkbox:hover {
+    background-color: #a4beff;
+    transition: ease-in-out 0.3s;
+}
+
+
+/* CHECKBOX / RADIO INPUT */
+
+.medical-checkbox input,
+.medical-radio input {
+    width: 14px;
+    height: 14px;
+    margin: 0 7px 0 0;
+    accent-color: #527deb;
+    flex-shrink: 0;
+}
+
+
+/* OTHER SPECIFY*/
+
+.other-specify {
+    width: 100%;
+    margin-top: 7px;
+}
+
+.other-specify input {
+    width: 100%;
+    height: 32px;
+    padding: 6px 9px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-left: 3px solid #527deb;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    outline: none;
+}
+
+.other-specify input:focus {
+    border-color: #527deb;
+}
+
+
+/* ACTION BUTTONS*/
+
+.edit-profile-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+
+/* BUTTONS */
+
+.cancel-button,
+.save-button {
+    height: 35px;
+    padding: 0 17px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* CANCEL */
+
+.cancel-button {
+    background-color: white;
+    color: #527deb;
+    border: 1px solid #527deb;
+}
+
+
+/* SAVE */
+
+.save-button {
+    background-color: #527deb;
+    color: white;
+    border: 1px solid #527deb;
+}
+
+
+/* HOVER */
+
+.cancel-button:hover {
+    background-color: #fbeaea;
+}
+
+.save-button:hover {
+    background-color: #527deb;
+}
+
+
+/*TABLET*/
+
+@media screen and (max-width: 900px) {
+
+    .option-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 600px) {
+
+    .parent-container {
+        padding: 5px;
+    }
+    .child-container1 {
+        padding: 7px;
+    }
+    .child-container3 {
+        padding: 10px;
+    }
+    .edit-information-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-group.full-width {
+        grid-column: 1;
+    }
+    .option-display {
+        grid-template-columns: 1fr;
+    }
+    .edit-profile-picture {
+        width: 55px;
+        height: 55px;
+    }
+    .profile-picture-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .edit-profile-actions {
+        justify-content: stretch;
+    }
+    .cancel-button,
+    .save-button {
+        flex: 1;
+    }
+}
